@@ -4,48 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        
-        .box {
-            width: 200px;
-            padding: 15px;
-            margin: 10px;
-            border: 10px solid #ccc;
-            box-sizing: border-box;
-            text-align: center;
-            display: inline-block;
-            background: grey;
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
         }
 
-        .title {
+        
+        .container {
             text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 300px;
+            padding: 15px;
+            margin: 10px auto;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            text-align: left;
+            position: relative;
+        }
+
+        .box-title {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #3498db;
+            color: #fff;
+            padding: 5px 10px;
+            margin: 0;
+            box-sizing: border-box;
         }
     </style>
-    <title>Our Menu</title>
-    
+    <title>Three Boxes Example</title>
 </head>
 <body>
-    <div class= "title">
-        <header><h1>Our Menu</h1></header>
-    </div>
 
     
-    <div class="box">
-        <h2>beef</h2>
-        <p>This is the content of the first box.</p>
-    </div>
+    <header>
+        <h1>Your Website Title</h1>
+        <p>Welcome to your website!</p>
+    </header>
 
     
-    <div class="box">
-        <h2>chicken</h2>
-        <p>This is the content of the second box.</p>
-    </div>
+    <div class="container">
 
-    
-    <div class="box">
-        <h2>pork</h2>
-        <p>This is the content of the third box.</p>
+        
+        <div class="box">
+            <h3 class="box-title">Title 1</h3>
+            <p>This is the content of the first box.</p>
+        </div>
+
+        
+        <div class="box">
+            <h3 class="box-title">Title 2</h3>
+            <p>This is the content of the second box.</p>
+        </div>
+
+        
+        <div class="box">
+            <h3 class="box-title">Title 3</h3>
+            <p>This is the content of the third box.</p>
+        </div>
+
     </div>
 
 </body>
 </html>
+
 
